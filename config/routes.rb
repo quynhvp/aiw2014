@@ -1,12 +1,14 @@
-Rails.application.routes.draw do
-  root 'home#index'
+# Rails.application.routes.draw do
+  # get 'blog/post'
 
-  get 'home/index'
-  get 'home/sample'
+  # root 'home#index'
 
-  devise_for :admin_users, ActiveAdmin::Devise.config
-  ActiveAdmin.routes(self)
-  devise_for :users
+  # get 'home/index'
+  # get 'home/sample'
+
+  # devise_for :admin_users, ActiveAdmin::Devise.config
+  # ActiveAdmin.routes(self)
+  # devise_for :users
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -62,4 +64,16 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-end
+  # post 'blog', to: 'blog#create', as: "blog_create_path"
+# end
+Rails.application.routes.draw do
+    get 'blog/post'
+
+    post 'blog', to: 'blog#create', as: 'blog_create'
+
+    delete 'blog/:id', to: 'blog#destroy', as: 'blog_destroy'
+
+    get 'home/index'
+
+    root 'home#index'
+  end

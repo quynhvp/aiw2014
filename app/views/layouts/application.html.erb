@@ -1,18 +1,36 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>AIW 2014 Starter Kit</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-<!-- device notice - add later
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
--->
+    <html>
+    <head>
+      <title>Blog Application</title>
+      <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+      <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+      <%= csrf_meta_tags %>
+    </head>
+    <body>
 
-<%= yield %>
+    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <%= link_to "Blog", root_path, class: "navbar-brand" %>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><%= link_to "Home", home_index_path %></li>
+            <li><%= link_to "Create a post", blog_post_path %></li>
+          </ul>
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
 
-</body>
-</html>
+    <div class="container">
+      <%= yield %>
+    </div><!--/.container-->
+
+    </body>
+    </html>

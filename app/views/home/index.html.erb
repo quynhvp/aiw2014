@@ -1,2 +1,14 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<h1>Your posts</h1>
+
+  <% @posts.each do |item| %>
+      <h5><strong><%= item.title %></strong></h5>
+      <h6><em>Posted at <%= item.created_at %></em></h6>
+      <br />
+      <%= item.body %>
+
+      <br />
+
+      <%= link_to "[Delete]", blog_destroy_path(item.id), method: :delete, data: {confirm: "Are you sure?"} %>
+
+      <hr />
+  <% end %>

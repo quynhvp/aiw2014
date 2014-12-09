@@ -1,20 +1,25 @@
-class HomeController < ApplicationController
-  def index
-  end
+# class HomeController < ApplicationController
+  # def index
+  # end
 
-  def categories
+  # def categories
 
-  end
+  # end
 
-  def details
+  # def details
 
-  end
+  # end
 
-  def search
+  # def search
 
-  end
+  # end
 
-  def sample
+  # def sample
     
+  # end
+# end
+ class HomeController < ApplicationController
+    def index
+      @posts = Post.all
+    end
   end
-end

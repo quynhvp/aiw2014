@@ -17,3 +17,6 @@
  *= require bootstrap-theme.min
  *= require style
  */
+body {
+      padding-top: 10px;
+  }
