@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
@@ -47,4 +47,4 @@ gem 'tzinfo-data'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-
+gem 'carrierwave', '~>0.9'

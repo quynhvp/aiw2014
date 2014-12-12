@@ -16,3 +16,6 @@
 //= require_tree .
 //= require bootstrap.min
 //= require custom
+//= require html5shiv
+//= require jquery-1.9.1.min
+
