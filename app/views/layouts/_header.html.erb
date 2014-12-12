@@ -43,12 +43,13 @@
             <li class="dropdown">
               <a href="#">Phòng Trưng Bày<i class="fa fa-caret-down"></i></a>
               <ul class="sub-menu">
-                <li><a href="xu việt.html">Tiền xu Việt Nam</a></li>
-                <li><a href="blog-2.html">Tiền xu Thế Giới</a></li>
+                <li><a href="<%= Pathname(home_blog2_path) %>">Tiền xu Thế giới</a></li>
+                <li><a href="<%= Pathname(home_xuviet_path) %>">Tiền xu Việt Nam</a></li>
               </ul><!-- /.sub-menu -->
             </li><!-- /.dropdown -->
             <li><a href="<%= Pathname(home_tintuc_path) %>">Tin tức tiền tệ</a></li>
-            <li><a href="contact.html">Cách thức giao dịch</a></li>
+            <li><a href="<%= Pathname(home_contact_path) %>">Cách thức giao dịch</a></li>
+
           </ul> <!-- /  .nav -->
         </div><!-- /  .collapse .navbar-collapse  -->
 
@@ -86,9 +87,9 @@
         <div class="ccr-language">
           <ul>
             <li>Ngôn ngữ:</li>
-            <li><a href="#"><img src="img/uk.png" alt="UK">English</a></li>
-            <li><a href="#"><img src="img/france.png" alt="France">France</a></li><li>
-            <a href="#"><img src="img/garman.png" alt="Garman">Vietnam</a></li>
+            <li><a href="#"><img src="<%= image_path('uk.png') %>" alt="UK">English</a></li>
+            <li><a href="#"><img src="<%= image_path('france.png') %>" alt="France">France</a></li><li>
+            <a href="#"><img src="<%= image_path('garman.png') %>" alt="Garman">Vietnam</a></li>
           </ul>
         </div> <!-- /.ccr-language -->
       </div><!-- /.container -->

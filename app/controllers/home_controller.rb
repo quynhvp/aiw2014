@@ -1,12 +1,12 @@
- class HomeController < ApplicationController
-   def index
+class HomeController < ApplicationController
+  def index
 
-     # raise(@Posts.size.to_s)
-   end
+    # raise(@Posts.size.to_s)
+  end
 
-def tintuc
-  @Posts=Post.all
-end
+  def tintuc
+    @Posts=Post.all
+  end
 
 
   # def details
@@ -18,7 +18,7 @@ end
   # end
 
   # def sample
-    
+
   # end
 
 end

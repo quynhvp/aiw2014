@@ -9,13 +9,13 @@ Rails.application.routes.draw do
   get 'home/baiviet4', to: 'home#baiviet4', as: 'home_baiviet4'
   get 'home/baiviet', to: 'home#baiviet', as: 'home_baiviet'
   get 'home/blog', to: 'home#blog', as: 'home_blog'
-  get 'home/blog-2', to: 'home#blog-2', as: 'home_blog-2'
+  get 'home/blog2', to: 'home#blog2', as: 'home_blog2'
   get 'home/blog-3', to: 'home#blog-3', as: 'home_blog-3'
   get 'home/contact', to: 'home#contact', as: 'home_contact'
   get 'home/single', to: 'home#single', as: 'home_single'
 
   get 'home/tintuc1', to: 'home#tintuc1', as: 'home_tintuc1'
-  # get 'home/xuviet', to: 'home#xuviet', as:'home_xuviet'
+  get 'home/xuviet', to: 'home#xuviet', as:'home_xuviet'
 
 
   devise_for :admin_users, ActiveAdmin::Devise.config
