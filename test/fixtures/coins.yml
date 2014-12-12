@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  coin_id: 
+  coin_name: MyString
+  image: MyString
+
+two:
+  coin_id: 
+  coin_name: MyString
+  image: MyString
