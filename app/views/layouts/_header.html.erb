@@ -39,16 +39,14 @@
 
         <div class="collapse navbar-collapse ccr-nav-main">
           <ul class="nav navbar-nav">
-            <li><a class="active" href="index.html">Trang Chủ</a></li>
-            <li class="dropdown">
-              <a href="#">Phòng Trưng Bày<i class="fa fa-caret-down"></i></a>
-              <ul class="sub-menu">
-                <li><a href="<%= Pathname(home_blog2_path) %>">Tiền xu Thế giới</a></li>
-                <li><a href="<%= Pathname(home_xuviet_path) %>">Tiền xu Việt Nam</a></li>
-              </ul><!-- /.sub-menu -->
-            </li><!-- /.dropdown -->
+            <li><%= link_to "Trang chu", home_index_path  %></li>
+
+
             <li><a href="<%= Pathname(home_tintuc_path) %>">Tin tức tiền tệ</a></li>
+            <li><a href="<%= Pathname(home_xu_viet_path) %>">Xu Việt</a></li>
+            <li><a href="<%= Pathname(home_xu_the_gioi_path) %>">Xu Thế giới</a></li>
             <li><a href="<%= Pathname(home_contact_path) %>">Cách thức giao dịch</a></li>
+
 
           </ul> <!-- /  .nav -->
         </div><!-- /  .collapse .navbar-collapse  -->

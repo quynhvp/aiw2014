@@ -3,20 +3,16 @@ Rails.application.routes.draw do
 
   get 'home/index', to: 'home#index', as:'home_index'
   get 'home/tintuc', to: 'home#tintuc', as: 'home_tintuc'
-  get 'home/baiviet1', to: 'home#baiviet1', as: 'home_baiviet1'
-  get 'home/baiviet2', to: 'home#baiviet2', as: 'home_baiviet2'
-  get 'home/baiviet3', to: 'home#baiviet3', as: 'home_baiviet3'
-  get 'home/baiviet4', to: 'home#baiviet4', as: 'home_baiviet4'
-  get 'home/baiviet', to: 'home#baiviet', as: 'home_baiviet'
+  get 'home/baiviet/:id', to: 'home#baiviet', as: 'home_baiviet'
+
   get 'home/blog', to: 'home#blog', as: 'home_blog'
-  get 'home/blog2', to: 'home#blog2', as: 'home_blog2'
   get 'home/blog-3', to: 'home#blog-3', as: 'home_blog-3'
   get 'home/contact', to: 'home#contact', as: 'home_contact'
   get 'home/single', to: 'home#single', as: 'home_single'
 
   get 'home/tintuc1', to: 'home#tintuc1', as: 'home_tintuc1'
-  get 'home/xuviet', to: 'home#xuviet', as:'home_xuviet'
-
+  get 'home/xu_viet', to: 'home#xu_viet', as:'home_xu_viet'
+  get 'home/xu_the_gioi', to: 'home#xu_the_gioi', as: 'home_xu_the_gioi'
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)

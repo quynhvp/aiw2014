@@ -26,10 +26,10 @@
   </div> <!-- / .current-page -->
 
   <article id="ccr-article">
-    <h1><a href="./single.html" >Tìm thấy nhiều cổ vật bằng vàng ròng </a></h1>
+    <h1><a href="./single.html" ><%= @APost.title %> </a></h1>
 
     <div class="article-like-comment-date">
-      Được đăng bởi <a href="#author">Bích Ngọc</a> on <time datetime="2014-02-17">2014-11-17</time> in <a href="#category">Category</a>
+      Được đăng bởi <a href="#author">Bích Ngọc</a> on <time datetime="2014-02-17"><%= @APost.created_at %></time> in <a href="#category">Category</a>
 
       <a class="like" href="#"><i class="fa fa-thumbs-o-up"></i> 08</a>
       <a class="comments" href="#"><i class="fa fa-comments-o"></i> 49</a>
@@ -37,20 +37,15 @@
     </div> <!-- /.article-like-comment-date -->
 
 
-    <img src="<%= image_path('slide/main-slide-1.jpg') %>" alt="1st Image">
+    <img src="<%= image_path(@APost.photo) %>" alt="1st Image" height="638px" width="764px">
     <p>
-      Mới đây, các nhà khảo cổ đã tìm thấy một số lượng lớn các cổ vật quý hiếm bao gồm hàng chục đồng xu và trang sức bằng vàng ròng được chôn gần đền Mount ở thánh địa Jerusalem.
+      <%= @APost.description %>
     </p>
     <img src="<%= image_path('ava.jpg') %>" alt="2nd Image">
     <p>
-      36 đồng xu bằng vàng được tìm thấy khắc họa hình ảnh những vị hoàng đế của đế quốc Byzantine (đế quốc Đông La Mã hay còn gọi là đế quốc Hy Lạp, tồn tại từ năm 330 đến năm 1453).
-      Ngoài ra, các nhà khảo cổ còn tìm thấy một chiếc huy chương lớn bằng vàng với đường kính lên tới 10cm chạm khắc hình chiếc đế đèn nhiều nhánh, một chiếc tù và được làm từ sừng động vật và một cuộn giấy cổ ghi chép nội dung của Ngũ kinh (Kinh thánh của người Do Thái).
+
+    <%= @APost.content %>
     </p>
-    <p>
-      Trong số những hiện vật được tìm thấy còn có một chiếc bình gốm bằng đất nung có niên đại 3.000 năm tuổi, khắc một thứ chữ cổ hiếm gặp. Đây được coi là hiện vật có chữ viết cổ xưa nhất từng được tìm thấy tại thành phố Jerusalem.				</p>
-    <p>
-      Tổng cộng 36 đồng tiền vàng chạm khắc hình những vị hoàng đế của đế quốc Byzantine (330-1453) đã được tìm thấy ở gần đền Mount, Jerusalem.
-      Đền Mount là thánh địa tôn giáo thiêng liêng nhất ở Jerusalem. Địa điểm khảo cổ là một phế tích có từ thời đế quốc Byzantine, nằm gần ngôi đền nổi tiếng này.					</p>
     <div class="article-tags">
       Tag: <a href="#tag1">Tiền Xu</a>, <a href="#tag2">Cổ Đại</a>, <a href="#tag3">Hi Lạp</a>
     </div>

@@ -1,11 +1,15 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  coin_id: 
   coin_name: MyString
-  image: MyString
+  coin_image: MyString
+  price: 1.5
+  material: MyString
+  coin_type_id: 1
 
 two:
-  coin_id: 
   coin_name: MyString
-  image: MyString
+  coin_image: MyString
+  price: 1.5
+  material: MyString
+  coin_type_id: 1

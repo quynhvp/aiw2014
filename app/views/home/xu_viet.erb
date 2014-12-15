@@ -1,11 +1,12 @@
 <!doctype html>
 <html lang="en">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="description" content="" >
   <meta name="author" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tin Tức Tiền Tệ</title>
+  <title>Sưu Tập Tiền Xu</title>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
@@ -16,6 +17,21 @@
 
 </head>
 
+<body>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
 
 
 
@@ -23,40 +39,32 @@
 
 <section id="ccr-main-section">
 <div class="container">
-
-
 <section id="ccr-left-section" class="col-md-8">
 
   <div class="current-page">
-    <a href="index.html"><i class="fa fa-home"></i> <i class="fa fa-angle-double-right"></i></a> Tin Tức Cập Nhật
+    <a href="index.html"><i class="fa fa-home"></i> <i class="fa fa-angle-double-right"></i></a> Tiền Xu Việt
   </div> <!-- / .current-page -->
 
-  <section id="ccr-blog">
-
-
-    <% @Posts.each do |item| %>
-
+  <section id="ccr-blog-s2">
+    <ul>
+      <% @xu_viet.each do |xu| %>
+      <li>
         <article>
           <figure class="blog-thumbnails">
-            <img src="<%= image_path(item.photo) %>" alt="Article Image ">
+            <img src=<%= image_path(xu.coin_image) %> alt="Article" height="600px" width="400x">
           </figure> <!-- /.blog-thumbnails -->
           <div class="blog-text">
-            <h1><a href="#"><%= item.title %> </a></h1>
-            <p>
-              <%= item.description %>
-            </p>
-
+            <p><%= (xu.coin_name) %></p>
 
             <div class="meta-data">
-              <a href="#" class="like"><i class="fa fa-thumbs-o-up"></i> 08</a>
-              <a href="#" class="comments"><i class="fa fa-comments-o"></i> 49</a>
-              <span class="read-more"><%= link_to home_baiviet_path(item.id) do %>Đọc Tiếp  <% end %> </span>
+              <a href="#" class="like"> <%= xu.material%> </a>
+              <a href="#" class="comments"><%= xu.price %></a>
             </div>
           </div> <!-- /.blog-text -->
-
         </article>
-    <% end %>
-
+      </li>
+      <% end %>
+    </ul>
 
     <div class="clearfix"></div>
     <nav class="nav-paging">
@@ -73,20 +81,14 @@
 
 
 
-  </section> <!-- /#ccr-blog -->
-
-
-
-
-
-
+  </section> <!-- /#ccr-blog-s2 -->
 
 
 </section><!-- /.col-md-8 / #ccr-left-section -->
 
 
 
-<aside id="ccr-right-section" class="col-md-4">
+<aside id="ccr-right-section" class="col-md-4 ccr-home">
   <section id="social-buttons">
     <ul>
       <li>
@@ -117,35 +119,35 @@
     </div> <!-- .ccr-gallery-ttile -->
     <ul>
       <li>
-        <img src="<%= image_path('sports-thumb-10.jpg') %>"alt="Avatar">
+        <img src="<%= image_path('sports-thumb-10.jpg') %>" alt="Avatar">
         <a href="#">Bộ 5 con thú 1972</a>
         <div class="date-like-comment">
           <span class="date"><time datetime="2014-02-17">333.000 VNĐ</time></span>
         </div>
       </li>
       <li>
-        <img src="<%= image_path('thumbnail-small-7.jpg') %>" alt="Avatar">
+        <img src="<%= image_path('thumbnail-small-7.jpg" ') %>" alt="Avatar">
         <a href="#">Thiệp 50đ Ngựa 1972 (năm Giáp Ngọ 2014)</a>
         <div class="date-like-comment">
           <span class="date"><time datetime="2014-02-17">80.000 VNĐ</time></span>
         </div>
       </li>
       <li>
-        <img src="<%= image_path('sports-thumb-5.jpg') %>" alt="Avatar">
+        <img src="<%= image_path('sports-thumb-5.jpg" ') %>"  alt="Avatar">
         <a href="#">Bộ tiền cotton 11 tờ</a>
         <div class="date-like-comment">
           <span class="date"><time datetime="2014-02-17">444.000 VNĐ</time></span>
         </div>
       </li>
       <li>
-        <img src="<%= image_path('thumbnail-small-2.jpg') %>" alt="Avatar">
+        <img src="<%= image_path('thumbnail-small-2.jpg" ') %>"  alt="Avatar">
         <a href="#">2 usd 1976</a>
         <div class="date-like-comment">
           <span class="date"><time datetime="2014-02-17">299.000 VNĐ</time></span>
         </div>
       </li>
       <li>
-        <img src="<%= image_path('thumbnail-small-5.jpg') %>" alt="Avatar">
+        <img src="<%= image_path('thumbnail-small-5.jpg') %>"  alt="Avatar">
         <a href="#">Bộ 4 tờ kỉ niệm mệnh giá lớn của Mỹ</a>
         <div class="date-like-comment">
           <span class="date"><time datetime="2014-02-17">140.000 VNĐ</time></span>
@@ -155,42 +157,60 @@
 
   </section> <!-- /#sidebar-popular-post -->
 
-  <section id="ccr-sidebar-add-place">
-    <div class="sidebar-add-place">
-      <img src="img/370.jpg" alt="370x250 px">
-    </div>
-  </section> <!-- /#ccr-sidebar-add-place -->
-
-
-  <section id="ccr-sidebar-newslater">
-
+  <section id="sidebar-video-post">
     <div class="ccr-gallery-ttile">
       <span></span>
-      <p><label for="sb-newslater"><strong>Đăng kí thông tin</strong></label></p>
+      <p><strong>Video</strong></p>
     </div> <!-- .ccr-gallery-ttile -->
 
-    <div class="sidebar-newslater-form">
-      <form class="ccr-gallery-ttile" action="#">
-        <input type="email" id="sb-newslater" name="sb-newslater" placeholder="Điền Email Liên Lạc" required>
-        <button type="submit">Theo dõi</button>
+    <div class="sidebar-video">
+      <iframe width="340" height="195" src="https://www.youtube.com/watch?v=9E1N37G9Zu0" frameborder="0" allowfullscreen></iframe>
+      Getting Gold on a Coin Pusher Machine!
+    </div>
+    <div class="date-like-comment">
+      <a href="#" class="like"><i class="fa fa-thumbs-o-up"></i> 08</a>
+      <a href="#" class="comments"><i class="fa fa-comments-o"></i> 49</a>
+    </div>
+  </section>  <!-- /#sidebar-video-post -->
 
-      </form>
-    </div> <!-- /.sidebar-newslater-form -->
+  <section id="ccr-calender">
 
-  </section> <!-- /#ccr-sidebar-newslater -->
-
-  <section id="ccr-find-on-fb">
-    <div class="find-fb-title">
-      <span><i class="fa fa-facebook"></i></span> Find us on Facebook
-    </div> <!-- /.find-fb-title -->
-    <div class="find-on-fb-body">
-
-      <div class="fb-like-box" data-href="https://www.facebook.com/nghia.lin.con" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
-
-    </div> <!-- /.find-on-fb-body -->
-  </section> <!-- /#ccr-find-on-fb -->
+    <section id="ccr-sidebar-add-place">
+      <div class="sidebar-add-place">
+        <img src="img/370.jpg" alt="370x250 px">
+      </div>
+    </section> <!-- /#ccr-sidebar-add-place -->
 
 
+    <section id="ccr-sidebar-newslater">
+
+      <div class="ccr-gallery-ttile">
+        <span></span>
+        <p><label for="sb-newslater"><strong>Đăng kí thông tin</strong></label></p>
+      </div> <!-- .ccr-gallery-ttile -->
+
+      <div class="sidebar-newslater-form">
+        <form class="ccr-gallery-ttile" action="#">
+          <input type="email" id="sb-newslater" name="sb-newslater" placeholder="Điền Email Liên Lạc" required>
+          <button type="submit">Theo dõi</button>
+
+        </form>
+      </div> <!-- /.sidebar-newslater-form -->
+
+    </section> <!-- /#ccr-sidebar-newslater -->
+
+    <section id="ccr-find-on-fb">
+      <div class="find-fb-title">
+        <span><i class="fa fa-facebook"></i></span> Find us on Facebook
+      </div> <!-- /.find-fb-title -->
+      <div class="find-on-fb-body">
+
+        <div class="fb-like-box" data-href="https://www.facebook.com/nghia.lin.con" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+
+      </div> <!-- /.find-on-fb-body -->
+    </section> <!-- /#ccr-find-on-fb -->
+
+</section>
 </aside><!-- / .col-md-4  / #ccr-right-section -->
 
 

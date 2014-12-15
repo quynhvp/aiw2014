@@ -4,7 +4,7 @@ ActiveAdmin.register Post do
   # See permitted parameters documentation:
   # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
   #
-   permit_params :title, :body, :photo
+  permit_params :title,:description,:content,:photo
   #
   # or
   #
@@ -14,12 +14,12 @@ ActiveAdmin.register Post do
   #   permitted
   # end
 
-
-  form(:html => { :multipart =>true}) do |f|
-    f.inputs "New Post" do
-      f.inputs :title
-      f.inputs :body
-      f.inputs :photo, label:"Profile picture", :as => :file
+  form(:html => { :multipart => true }) do |f|
+    f.inputs "Tin mới" do
+      f.input :photo, label:"Ảnh đại diện", :as => :file
+      f.input :title,label:"Tiêu đề"
+      f.input :description,label:"Mô tả"
+      f.input :content,label:"Nội dung"
     end
     f.actions
   end
