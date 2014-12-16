@@ -53,7 +53,8 @@
             <img src="<%= image_path(xu.coin_image) %>" alt="Article Image " height="600px" width="400x">
           </figure> <!-- /.blog-thumbnails -->
           <div class="blog-text">
-            <p><%= (xu.coin_name) %></p>
+            <h4><a href="single.html"><%= (xu.coin_name) %></a></h4>
+
 
             <div class="meta-data">
               <a href="#" class="like"><%= xu.material %></a>
@@ -84,7 +85,6 @@
 
 
 </section><!-- /.col-md-8 / #ccr-left-section -->
-
 
 
 <aside id="ccr-right-section" class="col-md-4 ccr-home">
@@ -119,35 +119,35 @@
     <ul>
       <li>
         <img src="<%= image_path('sports-thumb-10.jpg') %>" alt="Avatar">
-        <a href="#">Bộ 5 con thú 1972</a>
+   Bộ 5 con thú 1972
         <div class="date-like-comment">
           <span class="date"><time datetime="2014-02-17">333.000 VNĐ</time></span>
         </div>
       </li>
       <li>
         <img src="<%= image_path('thumbnail-small-7.jpg') %>"  alt="Avatar">
-        <a href="#">Thiệp 50đ Ngựa 1972 (năm Giáp Ngọ 2014)</a>
+       Thiệp 50đ Ngựa 1972 (năm Giáp Ngọ 2014)
         <div class="date-like-comment">
           <span class="date"><time datetime="2014-02-17">80.000 VNĐ</time></span>
         </div>
       </li>
       <li>
         <img src="<%= image_path('sports-thumb-5.jpg') %>" alt="Avatar">
-        <a href="#">Bộ tiền cotton 11 tờ</a>
+    Bộ tiền cotton 11 tờ
         <div class="date-like-comment">
           <span class="date"><time datetime="2014-02-17">444.000 VNĐ</time></span>
         </div>
       </li>
       <li>
-        <img src="<%= image_path('thumbnail-small-2.jp') %>" alt="Avatar">
-        <a href="#">2 usd 1976</a>
+        <img src="<%= image_path('thumbnail-small-2.jpg') %>"  alt="Avatar">
+            2 usd 1976
         <div class="date-like-comment">
           <span class="date"><time datetime="2014-02-17">299.000 VNĐ</time></span>
         </div>
       </li>
       <li>
         <img src="<%= image_path('thumbnail-small-5.jpg') %>" alt="Avatar">
-        <a href="#">Bộ 4 tờ kỉ niệm mệnh giá lớn của Mỹ</a>
+        Bộ 4 tờ kỉ niệm mệnh giá lớn của Mỹ
         <div class="date-like-comment">
           <span class="date"><time datetime="2014-02-17">140.000 VNĐ</time></span>
         </div>
@@ -155,64 +155,30 @@
     </ul>
 
   </section> <!-- /#sidebar-popular-post -->
-  </aside>
 
-  <section id="sidebar-video-post">
-    <div class="ccr-gallery-ttile">
-      <span></span>
-      <p><strong>Video</strong></p>
-    </div> <!-- .ccr-gallery-ttile -->
 
-    <div class="sidebar-video">
-      <iframe width="340" height="195" src="https://www.youtube.com/watch?v=9E1N37G9Zu0" frameborder="0" allowfullscreen></iframe>
-      Getting Gold on a Coin Pusher Machine!
+
+
+  <section id="ccr-sidebar-add-place">
+    <div class="sidebar-add-place">
+      <img src="<%= image_path('370.jpg') %>" alt="image" >
     </div>
-    <div class="date-like-comment">
-      <a href="#" class="like"><i class="fa fa-thumbs-o-up"></i> 08</a>
-      <a href="#" class="comments"><i class="fa fa-comments-o"></i> 49</a>
-    </div>
-  </section>  <!-- /#sidebar-video-post -->
-
-  <section id="ccr-calender">
-
-    <section id="ccr-sidebar-add-place">
-      <div class="sidebar-add-place">
-        <img src="<%= image_path('370.jpg') %>" alt="370x250 px">
-      </div>
-    </section> <!-- /#ccr-sidebar-add-place -->
+  </section> <!-- /#ccr-sidebar-add-place -->
 
 
-    <section id="ccr-sidebar-newslater">
+  <section id="ccr-find-on-fb">
+    <div class="find-fb-title">
+      <span><i class="fa fa-facebook"></i></span> Find us on Facebook
+    </div> <!-- /.find-fb-title -->
+    <div class="find-on-fb-body">
 
-      <div class="ccr-gallery-ttile">
-        <span></span>
-        <p><label for="sb-newslater"><strong>Đăng kí thông tin</strong></label></p>
-      </div> <!-- .ccr-gallery-ttile -->
+      <div class="fb-like-box" data-href="https://www.facebook.com/nghia.lin.con" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
 
-      <div class="sidebar-newslater-form">
-        <form class="ccr-gallery-ttile" action="#">
-          <input type="email" id="sb-newslater" name="sb-newslater" placeholder="Điền Email Liên Lạc" required>
-          <button type="submit">Theo dõi</button>
+    </div> <!-- /.find-on-fb-body -->
+  </section> <!-- /#ccr-find-on-fb -->
 
-        </form>
-      </div> <!-- /.sidebar-newslater-form -->
 
-    </section> <!-- /#ccr-sidebar-newslater -->
-
-    <section id="ccr-find-on-fb">
-      <div class="find-fb-title">
-        <span><i class="fa fa-facebook"></i></span> Find us on Facebook
-      </div> <!-- /.find-fb-title -->
-      <div class="find-on-fb-body">
-
-        <div class="fb-like-box" data-href="https://www.facebook.com/nghia.lin.con" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
-
-      </div> <!-- /.find-on-fb-body -->
-    </section> <!-- /#ccr-find-on-fb -->
-</section>
 </aside><!-- / .col-md-4  / #ccr-right-section -->
-
-
 </div><!-- /.container -->
 </section><!-- / #ccr-main-section -->
 

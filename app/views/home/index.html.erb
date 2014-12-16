@@ -22,86 +22,6 @@
 
 <section id="ccr-left-section" class="col-md-8">
 
-<div class="ccr-last-update">
-  <div class="update-ribon">Cập nhật mới nhất</div> <!-- /.update-ribon -->
-  <span class="update-ribon-right"></span> <!-- /.update-ribon-left -->
-  <div class="update-news-text" id="update-news-text">
-    <ul id="latestUpdate">
-      <li><a href="#">Tiền xu độc đáo</a></li>
-      <li><a href="#">Xu Việt cổ</a></li>
-      <li><a href="#">Xu theo chất liệu</a></li>
-      <li><a href="#">Xu Mỹ</a></li>
-      <li><a href="#">Xu phong thủy</a></li>
-    </ul>
-  </div> <!-- /.update-text -->
-
-  <div class="update-right-border"></div> <!-- /.update-right-border -->
-</div> <!-- / .ccr-last-update -->
-
-
-<section id="ccr-slide-main" class="carousel slide" data-ride="carousel">
-
-  <!-- Carousel items -->
-  <div class="carousel-inner">
-    <div class="active item">
-      <div class="container slide-element">
-        <img src="<%= image_path('slide/main-slide-1.jpg') %>" alt="Main Slide Image 1">
-        <p><a href="#">Xu Việt cổ</a></p>
-      </div> <!-- /.slide-element -->
-    </div> <!--/.active /.item -->
-
-    <div class="item">
-      <div class="container slide-element">
-        <img src="<%= image_path('slide/main-slide-2.jpg') %>" alt="Main Slide Image 1">
-        <p><a href="#">Xu theo chất liệu</a></p>
-      </div> <!-- /.slide-element -->
-    </div> <!--  /.item -->
-
-    <div class="item">
-      <div class="container slide-element">
-        <img src="<%= image_path('slide/main-slide-3.jpg') %>" alt="Main Slide Image 1">
-        <p><a href="<%= Pathname(home_xu_the_gioi_path) %>">  >Xu Thế Giới</a></p>
-      </div> <!-- /.slide-element -->
-    </div> <!-- .item -->
-
-    <div class="item">
-      <div class="container slide-element">
-        <img src="<%= image_path('slide/main-slide-4.jpg') %>" alt="Main Slide Image 1">
-        <p><a href="#">Xu phong thủy</a></p>
-      </div> <!-- /.slide-element -->
-    </div> <!-- /.item -->
-
-    <div class="item">
-      <div class="container slide-element">
-        <img src="<%= image_path('slide/main-slide-5.jpg') %>"  alt="Main Slide Image 1">
-        <p><a href="#">Xu Lì Xì</a></p>
-      </div> <!-- /.slide-element -->
-    </div> <!-- /.item -->
-
-    <div class="item">
-      <div class="container slide-element">
-        <img src="<%= image_path('slide/main-slide-6.jpg') %>" alt="Main Slide Image 1">
-        <p><a href="#">Đồng xu may mắn</a></p>
-      </div> <!-- /.slide-element -->
-    </div> <!-- /.item -->
-
-  </div> <!-- /.carousel-inner -->
-
-  <!-- slider nav -->
-  <a class="carousel-control left" href="#ccr-slide-main" data-slide="prev"><i class="fa fa-arrow-left"></i></a>
-  <a class="carousel-control right" href="#ccr-slide-main" data-slide="next"><i class="fa fa-arrow-right"></i></a>
-
-  <ol class="carousel-indicators">
-    <li data-target="#ccr-slide-main" data-slide-to="0" class="active"></li>
-    <li data-target="#ccr-slide-main" data-slide-to="1"></li>
-    <li data-target="#ccr-slide-main" data-slide-to="2"></li>
-    <li data-target="#ccr-slide-main" data-slide-to="3"></li>
-  </ol> <!-- /.carousel-indicators -->
-
-
-</section><!-- /#ccr-slide-main -->
-
-
 
 
 <section id="ccr-latest-post-gallery">
@@ -115,23 +35,23 @@
     <li>
       <div class="ccr-thumbnail">
         <img src="<%= image_path('thumbnail1.jpg') %>" alt="Thumbnail 1">
-        <p><a href="#postlink">Đọc thêm</a></p>
+
       </div>
-      <h4><a href="#postlink">Tác phẩm nghệ thuật trên tiền xu</a></h4>
+      <h4>Tác phẩm nghệ thuật trên tiền xu</h4>
     </li>
     <li>
       <div class="ccr-thumbnail">
         <img src="<%= image_path('thumbnail2.jpg') %>" alt="Thumbnail 1">
-        <p><a href="#postlink">Đọc thêm</a></p>
+
       </div>
-      <h4><a href="#postlink">Bộ sưu tập tiền cổ.</a></h4>
+      <h4>Bộ sưu tập tiền cổ.</h4>
     </li>
     <li>
       <div class="ccr-thumbnail">
         <img src="<%= image_path('thumbnail3.jpg') %>" alt="Thumbnail 1">
-        <p><a href="#postlink">Đọc thêm</a></p>
+
       </div>
-      <h4><a href="#postlink">Bộ sưu tập tiền trên tem</a></h4>
+      <h4>Bộ sưu tập tiền trên tem</h4>
     </li>
   </ul> <!-- /.ccr-latest-post -->
 
@@ -155,10 +75,9 @@
       <h5>Vác 4 tấn tiền xu đi đóng tiền bảo hiểm </h5>
       Ông Roger Herrin – người đã mất đứa con trai trong một tai nạn xe hơi đã bị tòa án ra phán quyết là đã “hưởng lợi quá mức” từ bảo hiểm và buộc phải hoàn trả 500.000 USD. Không phục phán quyết này nhưng ông vẫn chấp nhận trả tiền bằng cách riêng của mình...
       <div class="like-comment-readmore">
-        <i class="fa fa-thumbs-o-up"> 08</i>
-        <a href="#" class="comments"><i class="fa fa-comments-o"></i> 49</a>
-        <a class="read-more" href="#">Đọc Thêm</a>
-      </div> <!-- /.like-comment-readmore -->
+
+        <a class="read-more" href="<%= home_tintuc_path%>">Đọc Thêm</a>
+      </div>
     </div>
   </section> <!-- /#featured-world-news -->
 
@@ -183,11 +102,7 @@
     <div class="featured-sports-news-post">
       <h5>Đồng khánh thông bảo</h5>
       Giá: 800 VND
-      <div class="like-comment-readmore">
-        <i class="fa fa-thumbs-o-up"> 08</i>
-        <a href="#" class="comments"><i class="fa fa-comments-o"></i> 49</a>
-        <a class="read-more" href="#">Đọc Thêm</a>
-      </div> <!-- /.like-comment-readmore -->
+
     </div>
   </section> <!-- /#featured-sports-news -->
 
@@ -196,49 +111,49 @@
 
       <div class="ccr-thumbnail">
         <img src="<%= image_path('sports-thumb-2.jpg') %>"  alt="thumbnail-small-1.jpg">
-        <p><a href="#postlink">Đọc Thêm</a></p>
-      </div>
-      <h5><a href="#">Gia long thông bảo</a></h5>
+
+</div>
+      <h5>Gia long thông bảo</h5>
     </li>
     <li>
 
       <div class="ccr-thumbnail">
         <img src="<%= image_path('sports-thumb-3.jpg') %>"  alt="thumbnail-small-1.jpg">
-        <p><a href="#postlink">Đọc Thêm</a></p>
+
       </div>
-      <h5><a href="#">Khải định thông bảo</a></h5>
+      <h5>Khải định thông bảo</h5>
     </li>
     <li>
 
       <div class="ccr-thumbnail">
         <img src= "<%= image_path('sports-thumb-4.jpg') %>" alt="thumbnail-small-1.jpg">
-        <p><a href="#postlink">Đọc Thêm</a></p>
+
       </div>
-      <h5><a href="#">Minh mạng thông bảo</a></h5>
+      <h5>Minh mạng thông bảo</h5>
     </li>
     <li>
 
       <div class="ccr-thumbnail">
         <img src="<%= image_path('sports-thumb-5.jpg') %>" alt="thumbnail-small-1.jpg">
-        <p><a href="#postlink">Đọc Thêm</a></p>
+
       </div>
-      <h5><a href="#">Thành thái thông bảo</a></h5>
+      <h5>Thành thái thông bảo</h5>
     </li>
     <li>
 
       <div class="ccr-thumbnail">
         <img src="<%= image_path('sports-thumb-6.jpg') %>" alt="thumbnail-small-1.jpg">
-        <p><a href="#postlink">Đọc Thêm</a></p>
+
       </div>
-      <h5><a href="#">Thiệu trị thông bảo</a></h5>
+      <h5>Thiệu trị thông bảo</h5>
     </li>
     <li>
 
       <div class="ccr-thumbnail">
         <img src="<%= image_path('sports-thumb-7.jpg') %>" alt="thumbnail-small-1.jpg">
-        <p><a href="#postlink">Đọc Thêm</a></p>
-      </div>
-      <h5><a href="#">Tự đức thông bảo</a></h5>
+
+</div>
+      <h5>Tự đức thông bảo</h5>
     </li>
   </ul>
 
@@ -247,15 +162,7 @@
 <section class="bottom-border"></section>
 
 
-
-
-
-
-
-
 </section><!-- /.col-md-8 / #ccr-left-section -->
-
-
 
 <aside id="ccr-right-section" class="col-md-4 ccr-home">
   <section id="social-buttons">
@@ -289,35 +196,35 @@
     <ul>
       <li>
         <img src="<%= image_path('sports-thumb-10.jpg') %>" alt="Avatar">
-        <a href="#">Bộ 5 con thú 1972</a>
+        Bộ 5 con thú 1972
         <div class="date-like-comment">
           <span class="date"><time datetime="2014-02-17">333.000 VNĐ</time></span>
         </div>
       </li>
       <li>
         <img src="<%= image_path('thumbnail-small-7.jpg') %>"  alt="Avatar">
-        <a href="#">Thiệp 50đ Ngựa 1972 (năm Giáp Ngọ 2014)</a>
+     Thiệp 50đ Ngựa 1972 (năm Giáp Ngọ 2014)
         <div class="date-like-comment">
           <span class="date"><time datetime="2014-02-17">80.000 VNĐ</time></span>
         </div>
       </li>
       <li>
         <img src="<%= image_path('sports-thumb-5.jpg') %>" alt="Avatar">
-        <a href="#">Bộ tiền cotton 11 tờ</a>
+       Bộ tiền cotton 11 tờ
         <div class="date-like-comment">
           <span class="date"><time datetime="2014-02-17">444.000 VNĐ</time></span>
         </div>
       </li>
       <li>
         <img src="<%= image_path('thumbnail-small-2.jpg') %>"  alt="Avatar">
-        <a href="#">2 usd 1976</a>
+        2 usd 1976
         <div class="date-like-comment">
           <span class="date"><time datetime="2014-02-17">299.000 VNĐ</time></span>
         </div>
       </li>
       <li>
         <img src="<%= image_path('thumbnail-small-5.jpg') %>" alt="Avatar">
-        <a href="#">Bộ 4 tờ kỉ niệm mệnh giá lớn của Mỹ</a>
+      Bộ 4 tờ kỉ niệm mệnh giá lớn của Mỹ
         <div class="date-like-comment">
           <span class="date"><time datetime="2014-02-17">140.000 VNĐ</time></span>
         </div>
@@ -326,49 +233,15 @@
 
   </section> <!-- /#sidebar-popular-post -->
 
-  <section id="sidebar-video-post">
-    <div class="ccr-gallery-ttile">
-      <span></span>
-      <p><strong>Video</strong></p>
-    </div> <!-- .ccr-gallery-ttile -->
-
-    <div class="sidebar-video">
-      <iframe width="340" height="195" src="https://www.youtube.com/watch?v=9E1N37G9Zu0" frameborder="0" allowfullscreen></iframe>
-      Getting Gold on a Coin Pusher Machine!
-    </div>
-    <div class="date-like-comment">
-      <a href="#" class="like"><i class="fa fa-thumbs-o-up"></i> 08</a>
-      <a href="#" class="comments"><i class="fa fa-comments-o"></i> 49</a>
-    </div>
-  </section>  <!-- /#sidebar-video-post -->
-
-
 
 
 
   <section id="ccr-sidebar-add-place">
     <div class="sidebar-add-place">
-      <img src="img/370.jpg" alt="370x250 px">
+      <img src="<%= image_path('370.jpg') %>" alt="image" >
     </div>
   </section> <!-- /#ccr-sidebar-add-place -->
 
-
-  <section id="ccr-sidebar-newslater">
-
-    <div class="ccr-gallery-ttile">
-      <span></span>
-      <p><label for="sb-newslater"><strong>Đăng kí thông tin</strong></label></p>
-    </div> <!-- .ccr-gallery-ttile -->
-
-    <div class="sidebar-newslater-form">
-      <form class="ccr-gallery-ttile" action="#">
-        <input type="email" id="sb-newslater" name="sb-newslater" placeholder="Điền Email Liên Lạc" required>
-        <button type="submit">Theo dõi</button>
-
-      </form>
-    </div> <!-- /.sidebar-newslater-form -->
-
-  </section> <!-- /#ccr-sidebar-newslater -->
 
   <section id="ccr-find-on-fb">
     <div class="find-fb-title">
