@@ -5,12 +5,12 @@ Rails.application.routes.draw do
   get 'home/tintuc', to: 'home#tintuc', as: 'home_tintuc'
   get 'home/baiviet/:id', to: 'home#baiviet', as: 'home_baiviet'
 
-  get 'home/blog', to: 'home#blog', as: 'home_blog'
-  get 'home/blog-3', to: 'home#blog-3', as: 'home_blog-3'
+  # get 'home/blog', to: 'home#blog', as: 'home_blog'
+  # get 'home/blog-3', to: 'home#blog-3', as: 'home_blog-3'
   get 'home/contact', to: 'home#contact', as: 'home_contact'
-  get 'home/single', to: 'home#single', as: 'home_single'
+  # get 'home/single', to: 'home#single', as: 'home_single'
 
-  get 'home/tintuc1', to: 'home#tintuc1', as: 'home_tintuc1'
+  # get 'home/tintuc1', to: 'home#tintuc1', as: 'home_tintuc1'
   get 'home/xu_viet', to: 'home#xu_viet', as:'home_xu_viet'
   get 'home/xu_the_gioi', to: 'home#xu_the_gioi', as: 'home_xu_the_gioi'
 
